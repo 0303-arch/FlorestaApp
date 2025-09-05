@@ -5,26 +5,77 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
     android:layout_margin="20dp"
-    >
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
 
     <ImageView
         android:id="@+id/imgLogo"
+        android:layout_marginLeft="110dp"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/forest"/>
+        android:src="@drawable/forest" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtEmail"
+        app:startIconDrawable="@drawable/baseline_email"
+        app:endIconMode="clear_text"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="25dp"
+        android:hint="Insira seu E-mail"
+
+        >
+
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtSenha"
+        app:startIconDrawable="@drawable/baseline_lock"
+        app:endIconMode="password_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira sua Senha"
+
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+
+            android:inputType="textPassword"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/txtConta"
+        android:layout_width="120dp"
+        android:text="Criar Conta"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="120dp"
+        android:text="Entrar"
+        android:backgroundTint="#94C794"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+
+
 
 </LinearLayout>
